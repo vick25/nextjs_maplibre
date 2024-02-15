@@ -13,8 +13,9 @@ const Links = () => {
         }
     ];
 
-    return links.map(link => {
-        <Link href={link.path} key={link.title}>{link.title}</Link>
+    links.map(link => {
+        console.log(link.path)
+        return <Link href={link.path} key={link.title}>{link.title}</Link>;
     })
 }
 
